@@ -1,0 +1,34 @@
+/* 
+	After aliens was updated some aliens may die. Because of this 
+	the array will shrink and an OutOfBounds exception may be thrown
+*/
+	try {
+		// Reseting the yVel after getting one line down
+		aliens.get(i).setyVel(0);
+	} catch (IndexOutOfBoundsException e) {
+		e.printStackTrace();
+	}
+	
+Player bullet speed configuration: vel = 4
+Aliens bullet speed configuration: vel = 4
+
+		/*
+		aliensSortedByCoordinates = new ArrayList<Alien>();		
+		// Bubble sort is used in order to sort the aliens array in ascending order
+		for (int i = 0; i < aliens.size() - 1; i++) {			
+			for (int j = 0; j < aliens.size() - 1; j++) {
+				if (aliens.get(j).getX() < aliens.get(j + 1).getX()) {
+					aliensSortedByCoordinates.add(aliens.get(j));
+				}
+				System.out.println(aliensSortedByCoordinates.get(j).getX());
+			}
+		}
+		*/
+
+			/*
+		Aliens array sorted by coordinates, used to indicate which alien is the farthest and which is the closest.
+	 	This array is used in order to check when the alien group is completed one line (Collision Detection).
+		This is also used as an optimized alternative solution for the MIN/MAX method.
+	*/
+	private ArrayList<Alien> aliensSortedByCoordinates;
+		
