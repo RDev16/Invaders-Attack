@@ -198,6 +198,7 @@ public class AlienManager {
 	}
 	
 	public void tick() {
+		if(aliens.size()>0) {
 		shootingTimer++;
 
 		if (shootingTimer == shootingCooldown) {
@@ -208,7 +209,9 @@ public class AlienManager {
 		}
 		lineCompleted();
 		
-		for (int i = 0; i < aliens.size(); i++) aliens.get(i).tick();			
+		for (int i = 0; i < aliens.size(); i++) aliens.get(i).tick();	
+	}
+		
 	}
 
 	public void draw(Graphics2D g) {
