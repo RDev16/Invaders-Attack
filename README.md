@@ -1,3 +1,10 @@
 # Simple-Space-Invaders-Clone
 
-I wanted to do different experiments so I decided to take the game Space Invaders as a small project that took me two days to finish and try different things on it. The code started to mess up towards the end and I have already stopped investing in this project from two months ago already. Hope this source code will help someone in some way. Most of the code is well written and there are almost no bugs. The code is written in Java (8) using *Swing Framework* for the graphics.
+When I started studying game development I wrote all sorts of different games, and at one point in my adventure I decided to try writing a clone of Space Invaders.
+
+This project is not meant to be a uinque or serious project, it is just a project for a project-based learning. Hope the code will help others who also want to try to create something similar.
+
+I used some glue towards the end (;
+
+Java Version: 8
+Used *Swing Framework* for the graphics.
