@@ -199,20 +199,20 @@ public class AlienManager {
 	
 	public void tick() {
 		if(aliens.size()>0) {
-		shootingTimer++;
+			shootingTimer++;
 
-		if (shootingTimer == shootingCooldown) {
-			int rand = (int) (Math.random() * aliens.size());
-				
-			aliens.get(rand).setShooting(true);
-			shootingTimer = 0;
+			if (shootingTimer == shootingCooldown) {
+				int rand = (int) (Math.random() * aliens.size());
+			
+				aliens.get(rand).setShooting(true);
+				shootingTimer = 0;
+			}
+			lineCompleted();
+		
+			for (int i = 0; i < aliens.size(); i++) aliens.get(i).tick();	
 		}
-		lineCompleted();
-		
-		for (int i = 0; i < aliens.size(); i++) aliens.get(i).tick();	
 	}
-		
-	}
+
 
 	public void draw(Graphics2D g) {
 		for (int i = 0; i < aliens.size(); i++) aliens.get(i).draw(g);
