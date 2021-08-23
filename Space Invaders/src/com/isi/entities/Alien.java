@@ -62,6 +62,7 @@ public class Alien extends Entity {
 
 	@Override
 	public void tick() {
+		
 		PlayState s = (PlayState) state;
 
 		// Moving the alien

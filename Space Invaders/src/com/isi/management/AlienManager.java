@@ -40,6 +40,8 @@ public class AlienManager {
 	private int shootingCooldown;
 	// The timer for the next shot
 	private int shootingTimer;
+	// All aliens are defeated?
+	private boolean defeated = false;
 	
 	/** 
 	 * Will Be used Later for optimization? (Line Completed)
@@ -120,13 +122,17 @@ public class AlienManager {
 		aliens.remove(a);
 	}
 	
+	public boolean isDefeated() {
+		return defeated;
+	}
+	
 	/**
 	 * Automatically creates a group of aliens with given gaps between them. 
 	 * 
 	 * The last alien location will be smaller than the window width and at least few pixels smaller than the window height.
 	 */
 	public void autoGroupCreation() {		
-		for (int i = 0; i < yLen; i++) {
+		for (int i = 0; i < yLen; i++) { 
 			for (int j = 0; j < xLen; j++) {
 				if (i == 1)
 					aliens.add(new Alien(game, state, (50 * j + (xGaps * j)) + xStart, (50 * i + (yGaps * i)) + yStart, 1));
@@ -199,7 +205,8 @@ public class AlienManager {
 	
 	public void tick() {
 		if(aliens.size()>0) {
-			shootingTimer++;
+		shootingTimer++;
+
 
 			if (shootingTimer == shootingCooldown) {
 				int rand = (int) (Math.random() * aliens.size());
@@ -208,9 +215,13 @@ public class AlienManager {
 				shootingTimer = 0;
 			}
 			lineCompleted();
+
+		for (int i = 0; i < aliens.size(); i++) aliens.get(i).tick();	
+	} else if (aliens.size()==0) {
+		defeated = true;
+	}
 		
-			for (int i = 0; i < aliens.size(); i++) aliens.get(i).tick();	
-		}
+
 	}
 
 
