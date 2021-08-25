@@ -1,4 +1,4 @@
-# Simple-Space-Invaders-Clone
+# Invaders-Attack
 
 When I started studying game development I wrote all sorts of different games, and at one point in my adventure I decided to try writing a clone of Space Invaders.
 
