@@ -1,12 +1,13 @@
 # Invaders-Attack
 
-When I started studying game development I wrote all sorts of different games, and at one point in my journey I decided to try writing a clone of Space Invaders.
+A game I developed in 2019, inspired by the retro game Space Invaders developed in the 70s. My game was written from the initial idea of developing a Space Invaders clone.
 
-It is just a project for a project-based learning. Hope the code will help others who also want to try to create something similar. 
+The original game:
+![alt text](https://bit.ly/3lrgnXz)
 
-I wrote this game in 2019, it took me two days (4 hours each day) and a month ago I did finishes and fixed some critical bugs.
+My game:
+![image](https://user-images.githubusercontent.com/62857161/136425986-0724fe8e-8a36-4a11-afd7-efe0cf660895.png)
 
-I used some glue towards the end (;
+The game was developed in pure Java using the **Java Swing Framework** for the graphics.
 
-Java Version: 8
-Used *Swing Framework* for the graphics.
+I used some GLUE towards the end😉
