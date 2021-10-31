@@ -1,6 +1,6 @@
 # Invaders-Attack
 
-A game I have developed back in 2019, inspired by the retro game Space Invaders developed in the 70s. My game was written from the initial idea of developing a Space Invaders clone.
+A game I developed back in 2019, inspired by the retro game Space Invaders developed in the 70s. My game was written from the initial idea of developing a Space Invaders clone.
 
 The original game:
 ![alt text](https://bit.ly/3lrgnXz)
