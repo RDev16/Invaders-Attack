@@ -12,7 +12,7 @@ The game was developed in pure Java using the **Java Swing Framework** for the g
 
 # How to run
 
-- Use the runnable **Invaders Attack.jre**.
+- Use the runnable **Invaders Attack.jar**
 
 # How to play:
 
