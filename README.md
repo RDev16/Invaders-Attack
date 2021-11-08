@@ -12,7 +12,9 @@ The game was developed in pure Java using the **Java Swing Framework** for the g
 
 # How to run
 
-- Use the runnable **Invaders Attack.jar**
+- Java 8 or higher is a **must**.
+
+To play the game you can download the runnable: https://github.com/RDev16/Invaders-Attack/blob/master/Invaders%20Attack.jar.
 
 # How to play:
 
