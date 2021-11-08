@@ -10,8 +10,10 @@ My game:
 
 The game was developed in pure Java using the **Java Swing Framework** for the graphics.
 
-I used some GLUE towards the end😉
+# How to run
 
-How to play:
+- Use the runnable **Invaders Attack.jre**.
+
+# How to play:
 
 - Game controls: A/D (Right/Left), Space (Shoot).
